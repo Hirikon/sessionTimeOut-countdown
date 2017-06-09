@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="bootbox.min.js"></script>
+<script src="sessionTimeOut.js"></script>
+</head>
+<body>
+Υπόλοιπο Χρόνου:&nbsp;<span id="countdownBeforeExpiration"></span>&nbsp;<a class="clickToResetExpirationTime" href="#"><i class="fa fa-refresh"></i> Ανανέωση</a>
+<script type="text/javascript">
+    $(document).ready(function () {
+        SessionExpireCheckConstructor(120, 60, "#", "#", "#");
+    });
+</script>
+</body>
+</html>
